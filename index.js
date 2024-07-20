@@ -54,4 +54,3 @@ inquirer.prompt([
         fs.writeFile('README.md', generateMarkdown(data), (err) =>
             err ? console.error(err) : console.log('Success!'))
     });
-
