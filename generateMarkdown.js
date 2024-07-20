@@ -11,8 +11,6 @@
 // function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
-const fs = require('fs');
-const inquirer = require('inquirer');
 
 
 function generateMarkdown(data) {
@@ -37,7 +35,7 @@ function generateMarkdown(data) {
 
 ### License
 
-${data.license}
+**License:** ${data.license}
 
 ---
 
@@ -61,13 +59,12 @@ ${data.license}
 
 - ${data.email}
 
-| Table of Contents |
-| --- | 
-| Description | 
-| Installation | 
-| License | 
-| Contributing | 
-| Tests | 
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
 `;
 }
 
