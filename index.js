@@ -54,7 +54,7 @@ inquirer
     },
   ])
   .then((data) => {
-    fs.writeFile("README.md", generateMarkdown(data), (err) =>
+    fs.writeFile("newREADME.md", generateMarkdown(data), (err) =>
       err ? console.error(err) : console.log("Success!")
     );
   });
